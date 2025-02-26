@@ -1,0 +1,105 @@
+
+@font-face {
+    font-family: Outfit-bold;
+    src: url(../fonts/Outfit/static/Outfit-Bold.ttf);
+};
+
+@font-face {
+    font-family: Outfit-Regular;
+    src: url(../fonts/Outfit/static/Outfit-Regular.ttf);
+}
+
+
+:root {
+    
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+    --color: hsl(228, 45%, 44%);
+    
+    /*typography*/
+    --fs: font-size: 15px;
+    --fsb: font-size: 22px;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ * {
+  font-family:Outfit-Regular;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Slate-300);
+}
+
+#container {
+  width: 380px;
+  height: 600px;
+  background-color: var(--White);
+  border-radius: 4rem;
+  margin:0 auto;
+  margin-top: 2rem;
+  
+}
+
+.qr img {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 70px;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  padding: 0 auto;
+  color:var(--Slate-900);
+}
+
+p{
+  font-size: 15px;
+  text-align: center;
+  color: var(--Slate-500);
+  padding: 1rem 3rem;
+}
+
+.attribution {
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--Slate-900);
+}
+
+.copy::before {
+  content:"\00a9  ";
+}
+
+
+/* Media queries
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ @media screen and (max-width: 480px) {
+    #container {
+      margin-top: 2rem;
+      width: 90%;
+    }
+ }
